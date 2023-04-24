@@ -21,7 +21,7 @@ def show(year, month)
 
     print "#{x} "
 
-#    if x % 7 == ((7 - firstday.wday) % 7)
+    
     if (x + firstday.wday) % 7 == 0
       puts 
     end
@@ -48,17 +48,3 @@ end
 show(year, month)
 
 
-=begin
-date = Date.new(year, month, -1)
-puts date.day
-#show_from_sunday(year, month, date.day)
-#show_from_monday(year, month)
-firstday = Date.new(year, month, 1)
-if firstday.sunday?
-  show_from_sunday(year, month)
-end
-if firstday.monday?
-  show_from_monday(year, month, date.day)
-end
-
-=end
